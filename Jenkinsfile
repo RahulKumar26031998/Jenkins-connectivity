@@ -4,17 +4,17 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-               bat 'cd C:\Users\nishi\Desktop\git-sbdl\SBDL-Spark-Bulk-Data-Load'
+               bat 'cd C:/Users/nishi/Desktop/Jenkins-connect/Jenkins-connectivity/'
             }
         }
-        stage('Build') {
+        stage('Build 1') {
             steps {
-               bat 'pipenv --python Python3.7 sync'
+               bat 'pipenv --version'
             }
         }
         stage('Test') {
             steps {
-               bat 'pipenv run pytest'
+               bat 'python --version'
             }
         }
     }
