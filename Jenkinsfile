@@ -7,7 +7,7 @@ pipeline {
                bat 'cd C:/Users/nishi/Desktop/Jenkins-connect/Jenkins-connectivity/'
             }
         }
-        stage('Build') {
+        stage('Build 1') {
             steps {
                bat 'pipenv --version'
             }
